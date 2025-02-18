@@ -18,6 +18,12 @@
 			</view>
 				
 			<view class="cu-list grid col-4 text-sm">
+				<view class="cu-item animation-slide-bottom" @tap="goPage('projectList')">
+					<view class="padding text-center">
+						<text class="cuIcon-form text-blue" style="font-size:28px;"></text>
+						<view class="margin-top-xs">重点项目</view>
+					</view>
+				</view>
 				<view class="cu-item animation-slide-bottom" :style="[{animationDelay: (index + 1)*0.05 + 's'}]" v-for="(item,index) in usList" :key="index" @tap="goPage(item.page)">
 					<view class="padding text-center">
 						<image :src="item.icon" style="width:28px;height:28px;">

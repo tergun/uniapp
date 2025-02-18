@@ -4,7 +4,22 @@
 		{
 			"path": "pages/login/login",
 			"style": {}
-		}, {
+		},
+		{
+			"path": "pages/project/list",
+			"style": {
+				"navigationBarTitleText": "重点项目",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/project/detail",
+			"style": {
+				"navigationBarTitleText": "项目详情"
+			}
+		},{
 			"path": "pages/login/loginOauth2",
 			"style": {}
 		},
@@ -172,7 +187,7 @@
 			"allowsBounceVertical": "NO"
 		},
 		"navigationBarBackgroundColor": "#0081ff",
-		"navigationBarTitleText": "JEECG BOOT",
+		"navigationBarTitleText": "重点项目督办平台",
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},
