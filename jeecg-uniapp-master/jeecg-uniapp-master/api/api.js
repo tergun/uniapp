@@ -5,7 +5,7 @@ const apiService = {
 	 * 登录
 	 */
 	login(params) {
-		return http.post('/sys/mLogin',params)	
+		return http.post('/sys/mLogin', params);
 	},
 	/**
 	 * 手机号码登录
