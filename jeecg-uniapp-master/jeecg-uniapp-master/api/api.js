@@ -43,25 +43,25 @@ const apiService = {
 	 * 获取项目列表
 	 */
 	projectList(params) {
-		return http.get('/project/basic/list', params)
+		return http.get('/project/basic/list', params);
 	},
 	/**
 	 * 获取项目详情
 	 */
 	projectDetail(id) {
-		return http.get(`/project/basic/${id}`)
+		return http.get(`/project/basic/${id}`);
 	},
 	/**
 	 * 获取项目进度
 	 */
 	projectProgress(id) {
-		return http.get(`/project/progress/${id}`)
+		return http.get(`/project/progress/${id}`);
 	},
 	/**
 	 * 获取项目活跃度
 	 */
 	projectActivity(id) {
-		return http.get(`/project/activity/${id}`)
+		return http.get(`/project/activity/${id}`);
 	},
 	/**
 	 * 更新项目进展描述
@@ -70,7 +70,7 @@ const apiService = {
 		return http.post('/project/progress/updateDescription', {
 			projectId: projectId,
 			description: description
-		})
+		});
 	},
 	/**
 	 * 更新形象进度
@@ -79,7 +79,7 @@ const apiService = {
 		return http.post('/project/progress/updateVisualProgress', {
 			projectId: projectId,
 			percentage: percentage
-		})
+		});
 	}
 };
 
